@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marry's Coffee Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body class="flex flex-col min-h-screen bg-neutral-100 text-neutral-800">
+
+  <!-- Hero Section -->
+  <section class="bg-[url('IMG/1.jpg')] bg-cover bg-center h-screen flex flex-col justify-center items-center text-white text-center px-4">
+    <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Marry's Coffee Shop</h1>
+    <p class="text-xl mb-6 drop-shadow-md">Wake Up to the Perfect Brew!</p>
+    <a href="#contact" class="bg-yellow-400 text-black py-3 px-6 rounded shadow-md hover:bg-yellow-500 hover:shadow-[0_0_20px_#facc15] transition-all duration-300">
+      Visit Us Today
+    </a>
+  </section>
+
+  <!-- About Us -->
+  <section class="py-16 px-8 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    <p class="mb-4">At Marry's Coffee Shop, we believe in freshly roasted beans, cozy vibes, and great company. Come enjoy our barista-crafted coffees and homemade pastries.</p>
+    <img src="IMG/2.jpg" alt="Coffee Shop" class="w-full h-64 object-cover rounded shadow mt-4" />
+  </section>
+
+  <!-- Featured Menu -->
+  <section class="py-16 px-8 bg-[#f2e8dc]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Featured Menu</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <img src="IMG/3.jpg" alt="Latte" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Caramel Latte</h3>
+          <p class="text-gray-600">A smooth espresso blend topped with velvety caramel and steamed milk.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <img src="IMG/4.jpg" alt="Croissant" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Butter Croissant</h3>
+          <p class="text-gray-600">Freshly baked every morning, flaky and buttery with a golden finish.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <img src="IMG/5.jpg" alt="Mocha" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Iced Mocha</h3>
+          <p class="text-gray-600">Rich chocolate and espresso over ice with creamy milk. Perfectly refreshing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<section id="contact" class="py-16 px-8 text-center bg-yellow-100 scroll-mt-20">
+  <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+  <p class="mb-4">&#x1F4CD; 123 Coffee Lane, Bean City</p>
+  <p class="mb-2">&#x2709;&#xFE0F; Email: info@marryscoffee.com</p>
+  <p class="mb-6">&#x1F4DE; Phone: (123) 456-7890</p>
+
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-[#4b2e2e] text-white py-4 text-center mt-auto">
+    <p>&copy; 2025 Marry's Coffee Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
